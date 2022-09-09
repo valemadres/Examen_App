@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/nombres"
+        android:layout_below="@id/Inicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Nombre"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nombres"
+
+        android:layout_margin="10dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/APELLIDO"
+        android:layout_below="@id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Apellidos"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/givenname"
+        android:layout_below="@+id/APELLIDO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:inputType="text"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:id="@+id/fechas"
+        android:layout_below="@+id/givenname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Fecha de Nacimineto"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/fecha"
+        android:layout_below="@+id/fechas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="AÑO/ MES / DÍA"
+        android:inputType="number"
+        android:layout_margin="10dp"
+        />
+    <TextView
+
+        android:textSize="20dp"
+        android:id="@+id/genero"
+        android:layout_below="@id/fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Genero"
+        android:layout_margin="10dp"
+        />
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:id="@+id/botones"
+        android:layout_below="@+id/genero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hombre" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mujer" />
+    </LinearLayout>
+    <TextView
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:id="@+id/direccion"
+        android:layout_below="@id/botones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Direccion"/>
+
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/Contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Dirección"
+        android:inputType="text"
+        android:layout_below="@id/direccion"
+
+        />
+</RelativeLayout>
